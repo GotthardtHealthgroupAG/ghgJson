@@ -51,7 +51,7 @@
 // We mean it.
 //
 
-#include "qjsondocument.h"
+#include <ghgJson/qjsondocument.h>
 #include <qvarlengtharray.h>
 
 namespace ghg

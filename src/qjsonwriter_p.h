@@ -51,7 +51,7 @@
 // We mean it.
 //
 
-#include "qjsonvalue.h"
+#include <ghgJson/qjsonvalue.h>
 
 namespace ghg
 {

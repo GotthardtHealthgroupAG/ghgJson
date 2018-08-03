@@ -52,10 +52,10 @@
 // We mean it.
 //
 
-#include "qjsonobject.h"
-#include "qjsonvalue.h"
-#include "qjsondocument.h"
-#include "qjsonarray.h"
+#include <ghgJson/qjsonobject.h>
+#include <ghgJson/qjsonvalue.h>
+#include <ghgJson/qjsondocument.h>
+#include <ghgJson/qjsonarray.h>
 #include <qatomic.h>
 #include <qstring.h>
 #include <qendian.h>
