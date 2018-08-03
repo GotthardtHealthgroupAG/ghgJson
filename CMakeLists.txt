@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.6)
 project(ghgJson)
 set(CMAKE_CXX_STANDARD 14)
 
-option(BUILD_TESTS "Enable/Disable unit tests for the qjson library." on)
+option(GHGJSON_BUILD_TESTS "Enable/Disable unit tests for the qjson library." on)
 
 set(CMAKE_AUTOMOC ON)
 
