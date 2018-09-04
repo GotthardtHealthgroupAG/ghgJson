@@ -7,7 +7,7 @@ option(GHGJSON_BUILD_TESTS "Enable/Disable unit tests for the qjson library." on
 set(CMAKE_AUTOMOC ON)
 
 include(GenerateExportHeader)
-find_package(Qt5Core)
+find_package(Qt5 5.9.6 EXACT COMPONENTS Core REQUIRED)
 
 add_library(ghgJson SHARED
   include/ghgJson/QDecimal.h
@@ -32,6 +32,11 @@ target_link_libraries(ghgJson
   Qt5::Core
 )
 
-if (${BUILD_TESTS})
+if (${GHGJSON_BUILD_TESTS})
   add_subdirectory(tests)
+  add_custom_command(TARGET ghgJson POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${PROJECT_BINARY_DIR}/ghgJson.dll"
+    "${PROJECT_BINARY_DIR}/tests/ghgJson.dll"
+  )
 endif()

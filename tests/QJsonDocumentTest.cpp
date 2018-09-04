@@ -1,6 +1,6 @@
 #include <QtTest/QtTest>
-#include <QJsonDocument>
-#include <QJsonObject>
+#include <ghgJson/QJsonDocument>
+#include <ghgJson/QJsonObject>
 
 #define PARSER_DEBUG
 
